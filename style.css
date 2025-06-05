@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(35, 28, 26, 0.8);
+    z-index: 999;
+}
+
+.menu {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2px;
+    line-height: 80px;
+}
+
+    .nav-container li a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+}
+
+.hero, .album {
+    width: 100vw;
+    flex-shrink: 0;
+}
+
+.hero, .album {
+    min-height: 90vh;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 32px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+    .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider-btn.next {
+        right: 10px;
+    }
+
+.hero {
+    height: 100vh;
+    background-image: url("images/Chappell Roan.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero .overlay {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.cta-hint {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.album {
+    height: 100vh;
+    background-image: url("images/the giver.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.album-content {
+    text-align: center;
+}
+
+.album-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.album-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+.slogan {
+    background-color: #FF9A00;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.mv {
+    display: flex;
+}
+
+    .mv img {
+        width: 50%;
+    }
+
+.info {
+    width: 50%;
+    background-color: #FF89D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .info h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        text-align: center;
+        line-height: 2em;
+    }
+
+.product {
+    display: flex;
+    background-color: #71E478;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+
+    .product div {
+        width: 300px;
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+.footer {
+    background-color: #71E478;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.waterfall {
+    padding: 40px 20px;
+    background-color: #DFC3C3;
+    text-align: center;
+}
+
+    .waterfall h2 {
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+.waterfall-container {
+    column-count: 3;
+    column-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.waterfall-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+    .waterfall-item img {
+        width: 100%;
+        display: block;
+    }
+
